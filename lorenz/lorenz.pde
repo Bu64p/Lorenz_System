@@ -21,9 +21,9 @@ void draw() {
   float dx = (a * (y - x)) * dt;
   float dy = (x * (b - z) - y) * dt;
   float dz = (x * y - c * z)*dt;
-  x = x + dx;
-  y = y + dy;
-  z = z + dz;
+  x += dx;
+  y += dy;
+  z += dz;
   points_list.add(new PVector(x, y, z));
   float HUoffset = 0;
   beginShape();
